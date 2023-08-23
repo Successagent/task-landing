@@ -35,3 +35,27 @@ header a {
     line-height: 24px;
     color: #001918;
 }
+
+.hamburger {
+    display: none;
+}
+
+@media(max-width:650px) {
+    .hamburger {
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    header button {
+        display: none !important;
+    }
+}

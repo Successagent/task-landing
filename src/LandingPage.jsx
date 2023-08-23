@@ -163,42 +163,44 @@ const LandingPage = () => {
           FAQs
         </h1>
         <div>
-          <div className="what_image_container">
-            <Button
-              width={484}
-              height={50}
-              background={faqTab === 1 ? "#3BD07B" : "white"}
-              title={"Faq question one for the needed questions"}
-              color={faqTab === 1 ? "white" : "#3BD07B"}
-            />
-            <Button
-              width={484}
-              height={50}
-              background={faqTab === 2 ? "#3BD07B" : "white"}
-              title={"Faq question one for the needed questions"}
-              color={faqTab === 2 ? "white" : "#3BD07B"}
-            />
-            <Button
-              width={484}
-              height={50}
-              background={faqTab === 3 ? "#3BD07B" : "white"}
-              title={"Faq question one for the needed questions"}
-              color={faqTab === 3 ? "white" : "#3BD07B"}
-            />
-            <Button
-              width={484}
-              height={50}
-              background={faqTab === 4 ? "#3BD07B" : "white"}
-              title={"Faq question one for the needed questions"}
-              color={faqTab === 4 ? "white" : "#3BD07B"}
-            />
-            <Button
-              width={484}
-              height={50}
-              background={faqTab === 5 ? "#3BD07B" : "white"}
-              title={"Faq question one for the needed questions"}
-              color={faqTab === 5 ? "white" : "#3BD07B"}
-            />
+          <div className="scrollble">
+            <div className="what_image_container">
+              <Button
+                width={484}
+                height={50}
+                background={faqTab === 1 ? "#3BD07B" : "white"}
+                title={"Faq question one for the needed questions"}
+                color={faqTab === 1 ? "white" : "#3BD07B"}
+              />
+              <Button
+                width={484}
+                height={50}
+                background={faqTab === 2 ? "#3BD07B" : "white"}
+                title={"Faq question one for the needed questions"}
+                color={faqTab === 2 ? "white" : "#3BD07B"}
+              />
+              <Button
+                width={484}
+                height={50}
+                background={faqTab === 3 ? "#3BD07B" : "white"}
+                title={"Faq question one for the needed questions"}
+                color={faqTab === 3 ? "white" : "#3BD07B"}
+              />
+              <Button
+                width={484}
+                height={50}
+                background={faqTab === 4 ? "#3BD07B" : "white"}
+                title={"Faq question one for the needed questions"}
+                color={faqTab === 4 ? "white" : "#3BD07B"}
+              />
+              <Button
+                width={484}
+                height={50}
+                background={faqTab === 5 ? "#3BD07B" : "white"}
+                title={"Faq question one for the needed questions"}
+                color={faqTab === 5 ? "white" : "#3BD07B"}
+              />
+            </div>
           </div>
           <div className="what_hr">
             <div className="hrs">

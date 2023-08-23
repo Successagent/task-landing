@@ -3,6 +3,7 @@ import "./Header.css";
 import HeaderLogo from "../../asset/bell_bread.png";
 import { HashLink as Link } from "react-router-hash-link";
 import Button from "../Button/Button";
+import hamburger from "../../asset/hamburger.svg";
 
 const Header = () => {
   return (
@@ -27,6 +28,7 @@ const Header = () => {
         width={180}
         title={"Contact us"}
       />
+      <img className="hamburger" src={hamburger} alt="" />
     </header>
   );
 };
