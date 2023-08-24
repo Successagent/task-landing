@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const MotionX = ({ children }) => {
+const MotionX = ({ children, width = "fit-content" }) => {
   const ref = useRef(null);
   const useView = useInView(ref, { once: true });
   const startAnimate = useAnimation();
@@ -17,6 +17,7 @@ const MotionX = ({ children }) => {
       style={{
         position: "relative",
         overflow: "hidden",
+        width,
       }}
     >
       <motion.div

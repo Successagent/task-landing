@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Header } from "./components";
+import { Button, Header, MotionRight, Motion, MotionX } from "./components";
 import intro from "./asset/intro.png";
 import apple from "./asset/appstore.png";
 import playstore from "./asset/playstore.png";
@@ -10,9 +10,6 @@ import what2 from "./asset/what2.png";
 import what3 from "./asset/what3.png";
 import faq from "./asset/faq.png";
 import Footer from "./components/Footer/Footer";
-import Motion from "./components/Motion";
-import MotionRight from "./components/MotionRight";
-import MotionX from "./components/MotionX";
 
 const LandingPage = () => {
   const [tab, setTab] = useState(1);
@@ -96,11 +93,17 @@ const LandingPage = () => {
           );
         })}
       </section>
-      <section id="process" className="what_we_do">
-        <h2>How it works</h2>
-        <div>
+      <section id="process" className="what_we_do desktop_view">
+        <div className="hero_text_container">
+          <Motion>
+            <h2>How it works</h2>
+          </Motion>
+        </div>
+        <div className="what_we_do_items">
           <div className="what_image_container">
-            <img src={what1} alt="" />
+            <MotionX>
+              <img src={what1} alt="" />
+            </MotionX>
           </div>
           <div className="what_hr">
             <div className="indicator">1</div>
@@ -111,23 +114,34 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="what_text_container">
-            <h2>Browse and Place Order</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-              dignissim ornare nunc in. Est a tortor eget aenean dignissim
-            </p>
-            <Button
-              background={"#3BD07B"}
-              color={"white"}
-              width={212}
-              height={50}
-              title={"Download now"}
-            />
+            <MotionRight>
+              <h2>Browse and Place Order</h2>
+            </MotionRight>
+            <Motion>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+              </p>
+            </Motion>
+            <MotionX>
+              <Button
+                background={"#3BD07B"}
+                color={"white"}
+                width={212}
+                height={50}
+                title={"Download now"}
+              />
+            </MotionX>
           </div>
         </div>
-        <div style={{ flexDirection: "row-reverse" }}>
+        <div
+          className="what_we_do_items"
+          style={{ flexDirection: "row-reverse" }}
+        >
           <div className="what_image_container">
-            <img src={what2} alt="" />
+            <Motion>
+              <img src={what2} alt="" />
+            </Motion>
           </div>
           <div className="what_hr">
             <div className="indicator">2</div>
@@ -138,23 +152,31 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="what_text_container">
-            <h2>Fast Delivery to Location</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-              dignissim ornare nunc in. Est a tortor eget aenean dignissim
-            </p>
-            <Button
-              background={"#3BD07B"}
-              color={"white"}
-              width={212}
-              height={50}
-              title={"Download now"}
-            />
+            <MotionRight>
+              <h2>Fast Delivery to Location</h2>
+            </MotionRight>
+            <MotionX>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+              </p>
+            </MotionX>
+            <Motion>
+              <Button
+                background={"#3BD07B"}
+                color={"white"}
+                width={212}
+                height={50}
+                title={"Download now"}
+              />
+            </Motion>
           </div>
         </div>
-        <div>
+        <div className="what_we_do_items">
           <div className="what_image_container">
-            <img src={what3} alt="" />
+            <MotionX>
+              <img src={what3} alt="" />
+            </MotionX>
           </div>
           <div className="what_hr">
             <div className="indicator">3</div>
@@ -165,66 +187,207 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="what_text_container">
-            <h2>Receive and Enjoy</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-              dignissim ornare nunc in. Est a tortor eget aenean dignissim
-            </p>
-            <Button
-              background={"#3BD07B"}
-              color={"white"}
-              width={212}
-              height={50}
-              title={"Download now"}
-            />
+            <Motion>
+              <h2>Receive and Enjoy</h2>
+            </Motion>
+            <MotionRight>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+              </p>
+            </MotionRight>
+            <MotionX>
+              <Button
+                background={"#3BD07B"}
+                color={"white"}
+                width={212}
+                height={50}
+                title={"Download now"}
+              />
+            </MotionX>
+          </div>
+        </div>
+      </section>
+      <section id="process" className="what_we_do mobile_view">
+        <div className="hero_text_container">
+          <Motion>
+            <h2>How it works</h2>
+          </Motion>
+        </div>
+        <div className="what_we_do_items">
+          <div className="what_image_container">
+            <MotionX>
+              <img src={what1} alt="" />
+            </MotionX>
+          </div>
+          <div className="what_hr">
+            <div className="indicator">1</div>
+            <div className="hrs">
+              {itemOne.map((item, key) => {
+                return <div key={key}></div>;
+              })}
+            </div>
+          </div>
+          <div className="what_text_container">
+            <MotionRight>
+              <h2>Browse and Place Order</h2>
+            </MotionRight>
+            <Motion>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+              </p>
+            </Motion>
+            <MotionX>
+              <Button
+                background={"#3BD07B"}
+                color={"white"}
+                width={212}
+                height={50}
+                title={"Download now"}
+              />
+            </MotionX>
+          </div>
+        </div>
+        <div
+          className="what_we_do_items"
+          style={{ flexDirection: "row-reverse" }}
+        >
+          <div className="what_image_container">
+            <Motion>
+              <img src={what2} alt="" />
+            </Motion>
+          </div>
+          <div className="what_hr">
+            <div className="indicator">2</div>
+            <div className="hrs">
+              {itemOne.map((item, key) => {
+                return <div key={key}></div>;
+              })}
+            </div>
+          </div>
+          <div className="what_text_container">
+            <MotionRight>
+              <h2>Fast Delivery to Location</h2>
+            </MotionRight>
+            <MotionX>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+              </p>
+            </MotionX>
+            <Motion>
+              <Button
+                background={"#3BD07B"}
+                color={"white"}
+                width={212}
+                height={50}
+                title={"Download now"}
+              />
+            </Motion>
+          </div>
+        </div>
+        <div className="what_we_do_items">
+          <div className="what_hr">
+            <div className="indicator">3</div>
+            <div className="hrs">
+              {itemOne.map((item, key) => {
+                return <div key={key}></div>;
+              })}
+            </div>
+          </div>
+          <div>
+            <div className="what_image_container">
+              <MotionX>
+                <img src={what3} alt="" />
+              </MotionX>
+            </div>
+            <div className="what_text_container">
+              <Motion>
+                <h2>Receive and Enjoy</h2>
+              </Motion>
+              <MotionRight>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+                  dignissim ornare nunc in. Est a tortor eget aenean dignissim
+                </p>
+              </MotionRight>
+              <MotionX>
+                <Button
+                  background={"#3BD07B"}
+                  color={"white"}
+                  width={212}
+                  height={50}
+                  title={"Download now"}
+                />
+              </MotionX>
+            </div>
           </div>
         </div>
       </section>
       <section id="faq" className="section_faq">
-        <h1
-          style={{ textAlign: "center", marginBottom: 50 }}
-          className="header_text"
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: 50,
+          }}
         >
-          FAQs
-        </h1>
+          <Motion>
+            <h1 style={{ textAlign: "center" }} className="header_text">
+              FAQs
+            </h1>
+          </Motion>
+        </div>
         <div>
           <div className="scrollble">
             <div className="what_image_container">
-              <Button
-                width={484}
-                height={50}
-                background={faqTab === 1 ? "#3BD07B" : "white"}
-                title={"Faq question one for the needed questions"}
-                color={faqTab === 1 ? "white" : "#3BD07B"}
-              />
-              <Button
-                width={484}
-                height={50}
-                background={faqTab === 2 ? "#3BD07B" : "white"}
-                title={"Faq question one for the needed questions"}
-                color={faqTab === 2 ? "white" : "#3BD07B"}
-              />
-              <Button
-                width={484}
-                height={50}
-                background={faqTab === 3 ? "#3BD07B" : "white"}
-                title={"Faq question one for the needed questions"}
-                color={faqTab === 3 ? "white" : "#3BD07B"}
-              />
-              <Button
-                width={484}
-                height={50}
-                background={faqTab === 4 ? "#3BD07B" : "white"}
-                title={"Faq question one for the needed questions"}
-                color={faqTab === 4 ? "white" : "#3BD07B"}
-              />
-              <Button
-                width={484}
-                height={50}
-                background={faqTab === 5 ? "#3BD07B" : "white"}
-                title={"Faq question one for the needed questions"}
-                color={faqTab === 5 ? "white" : "#3BD07B"}
-              />
+              <Motion>
+                <Button
+                  width={484}
+                  height={50}
+                  background={faqTab === 1 ? "#3BD07B" : "white"}
+                  title={"Faq question one for the needed questions"}
+                  color={faqTab === 1 ? "white" : "#3BD07B"}
+                />
+              </Motion>
+              <MotionRight>
+                <Button
+                  width={484}
+                  height={50}
+                  background={faqTab === 2 ? "#3BD07B" : "white"}
+                  title={"Faq question one for the needed questions"}
+                  color={faqTab === 2 ? "white" : "#3BD07B"}
+                />
+              </MotionRight>
+              <MotionX>
+                <Button
+                  width={484}
+                  height={50}
+                  background={faqTab === 3 ? "#3BD07B" : "white"}
+                  title={"Faq question one for the needed questions"}
+                  color={faqTab === 3 ? "white" : "#3BD07B"}
+                />
+              </MotionX>
+              <MotionRight>
+                <Button
+                  width={484}
+                  height={50}
+                  background={faqTab === 4 ? "#3BD07B" : "white"}
+                  title={"Faq question one for the needed questions"}
+                  color={faqTab === 4 ? "white" : "#3BD07B"}
+                />
+              </MotionRight>
+              <Motion>
+                <Button
+                  width={484}
+                  height={50}
+                  background={faqTab === 5 ? "#3BD07B" : "white"}
+                  title={"Faq question one for the needed questions"}
+                  color={faqTab === 5 ? "white" : "#3BD07B"}
+                />
+              </Motion>
             </div>
           </div>
           <div className="what_hr">
@@ -236,14 +399,18 @@ const LandingPage = () => {
           </div>
           <div className="what_text_container">
             <div>
-              <img src={faq} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Posuere morbi feugiat
-                nec sed rhoncus. Blandit massa quis volutpat amet feugiat lectus
-                ullamcorper ultrices tincidunt. Velit sit morbi ut eu elementum
-                porttitor fames nunc etiam. Sit varius nisl et non velit nulla
-                morbi. Nibh nulla justo quisque tristique egestas.
-              </p>
+              <Motion>
+                <img src={faq} alt="" />
+              </Motion>
+              <MotionRight>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Posuere morbi feugiat
+                  nec sed rhoncus. Blandit massa quis volutpat amet feugiat
+                  lectus ullamcorper ultrices tincidunt. Velit sit morbi ut eu
+                  elementum porttitor fames nunc etiam. Sit varius nisl et non
+                  velit nulla morbi. Nibh nulla justo quisque tristique egestas.
+                </p>
+              </MotionRight>
             </div>
           </div>
         </div>
