@@ -3,7 +3,7 @@ import { Button, Header, MotionRight, Motion, MotionX } from "./components";
 import intro from "./asset/intro.png";
 import apple from "./asset/appstore.png";
 import playstore from "./asset/playstore.png";
-import { itemOne, pinTabs } from "./utils/data";
+import { itemOne, itemThree, itemTwo, pinTabs } from "./utils/data";
 import truck from "./asset/truck.png";
 import what1 from "./asset/what1.png";
 import what2 from "./asset/what2.png";
@@ -214,113 +214,131 @@ const LandingPage = () => {
             <h2>How it works</h2>
           </Motion>
         </div>
-        <div className="what_we_do_items">
-          <div className="what_image_container">
-            <MotionX>
-              <img src={what1} alt="" />
-            </MotionX>
-          </div>
-          <div className="what_hr">
-            <div className="indicator">1</div>
-            <div className="hrs">
-              {itemOne.map((item, key) => {
-                return <div key={key}></div>;
-              })}
-            </div>
-          </div>
-          <div className="what_text_container">
-            <MotionRight>
-              <h2>Browse and Place Order</h2>
-            </MotionRight>
-            <Motion>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-                dignissim ornare nunc in. Est a tortor eget aenean dignissim
-              </p>
-            </Motion>
-            <MotionX>
-              <Button
-                background={"#3BD07B"}
-                color={"white"}
-                width={212}
-                height={50}
-                title={"Download now"}
-              />
-            </MotionX>
-          </div>
-        </div>
+
         <div
-          className="what_we_do_items"
-          style={{ flexDirection: "row-reverse" }}
+          style={{ display: "flex", flexDirection: "row", padding: 20, gap: 0 }}
         >
-          <div className="what_image_container">
-            <Motion>
-              <img src={what2} alt="" />
-            </Motion>
-          </div>
-          <div className="what_hr">
-            <div className="indicator">2</div>
-            <div className="hrs">
-              {itemOne.map((item, key) => {
-                return <div key={key}></div>;
-              })}
-            </div>
-          </div>
-          <div className="what_text_container">
-            <MotionRight>
-              <h2>Fast Delivery to Location</h2>
-            </MotionRight>
-            <MotionX>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-                dignissim ornare nunc in. Est a tortor eget aenean dignissim
-              </p>
-            </MotionX>
-            <Motion>
-              <Button
-                background={"#3BD07B"}
-                color={"white"}
-                width={212}
-                height={50}
-                title={"Download now"}
-              />
-            </Motion>
-          </div>
-        </div>
-        <div className="what_we_do_items">
-          <div className="what_hr">
-            <div className="indicator">3</div>
-            <div className="hrs">
-              {itemOne.map((item, key) => {
-                return <div key={key}></div>;
-              })}
-            </div>
-          </div>
           <div>
-            <div className="what_image_container">
-              <MotionX>
-                <img src={what3} alt="" />
-              </MotionX>
+            <div className="what_hr">
+              <div className="indicator">1</div>
+              <div className="hrs">
+                {itemThree.map((item, key) => {
+                  return <div key={key}></div>;
+                })}
+              </div>
             </div>
-            <div className="what_text_container">
-              <Motion>
-                <h2>Receive and Enjoy</h2>
-              </Motion>
-              <MotionRight>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-                  dignissim ornare nunc in. Est a tortor eget aenean dignissim
-                </p>
-              </MotionRight>
-              <MotionX>
-                <Button
-                  background={"#3BD07B"}
-                  color={"white"}
-                  width={212}
-                  height={50}
-                  title={"Download now"}
-                />
-              </MotionX>
+            <div className="what_hr">
+              <div className="indicator">2</div>
+              <div className="hrs">
+                {itemTwo.map((item, key) => {
+                  return <div key={key}></div>;
+                })}
+              </div>
+            </div>
+            <div className="what_hr">
+              <div className="indicator">3</div>
+              <div className="hrs">
+                {itemOne.map((item, key) => {
+                  return <div key={key}></div>;
+                })}
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 50,
+              width: "100%",
+            }}
+          >
+            <div className="what_we_do_items">
+              <div className="what_image_container">
+                <MotionX>
+                  <img src={what1} alt="" />
+                </MotionX>
+              </div>
+              <div className="what_text_container">
+                <MotionRight>
+                  <h2>Browse and Place Order</h2>
+                </MotionRight>
+                <Motion>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Ultricies volutpat
+                    ut dignissim ornare nunc in. Est a tortor eget aenean
+                    dignissim
+                  </p>
+                </Motion>
+                <MotionX>
+                  <Button
+                    background={"#3BD07B"}
+                    color={"white"}
+                    width={212}
+                    height={50}
+                    title={"Download now"}
+                  />
+                </MotionX>
+              </div>
+            </div>
+            <div
+              className="what_we_do_items"
+              style={{ flexDirection: "row-reverse" }}
+            >
+              <div className="what_image_container">
+                <Motion>
+                  <img src={what2} alt="" />
+                </Motion>
+              </div>
+
+              <div className="what_text_container">
+                <MotionRight>
+                  <h2>Fast Delivery</h2>
+                </MotionRight>
+                <MotionX>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Ultricies volutpat
+                    ut dignissim ornare nunc in. Est a tortor eget aenean
+                    dignissim
+                  </p>
+                </MotionX>
+                <Motion>
+                  <Button
+                    background={"#3BD07B"}
+                    color={"white"}
+                    width={212}
+                    height={50}
+                    title={"Download now"}
+                  />
+                </Motion>
+              </div>
+            </div>
+            <div className="what_we_do_items">
+              <div className="what_image_container">
+                <MotionX>
+                  <img src={what3} alt="" />
+                </MotionX>
+              </div>
+              <div className="what_text_container">
+                <Motion>
+                  <h2>Receive and Enjoy</h2>
+                </Motion>
+                <MotionRight>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Ultricies volutpat
+                    ut dignissim ornare nunc in. Est a tortor eget aenean
+                    dignissim
+                  </p>
+                </MotionRight>
+                <MotionX>
+                  <Button
+                    background={"#3BD07B"}
+                    color={"white"}
+                    width={212}
+                    height={50}
+                    title={"Download now"}
+                  />
+                </MotionX>
+              </div>
             </div>
           </div>
         </div>

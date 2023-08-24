@@ -422,6 +422,7 @@ footer {
     display: block !important;
   }
 
+
   .hero_text_container {
     margin-bottom: 0;
   }
@@ -511,7 +512,7 @@ footer {
     flex-direction: column;
   }
 
-  .what_we_do>div {
+  .desktop_view .what_we_do>div {
     flex-direction: column !important;
     padding: 20px;
   }
@@ -621,5 +622,13 @@ footer {
   .footer_links_item_three svg {
     margin-top: 7px;
   }
+
+  .mobile_view .what_hr {
+    display: flex !important;
+  }
+
+
+
+  .mobile_view .what_we_do_items {}
 
 }
