@@ -129,7 +129,7 @@ img {
   width: 40%;
 }
 
-.pin_img_tab div {
+.truck {
   height: 125px;
   width: 125px;
   background-color: #178C49;
@@ -375,7 +375,7 @@ footer {
 
 .footer_contact {
   padding: 20px 30px;
-  background-color: #3BD07B;
+  background-color: #27AE61;
   border-radius: 27px;
   display: flex;
   align-items: center;

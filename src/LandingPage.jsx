@@ -10,6 +10,9 @@ import what2 from "./asset/what2.png";
 import what3 from "./asset/what3.png";
 import faq from "./asset/faq.png";
 import Footer from "./components/Footer/Footer";
+import Motion from "./components/Motion";
+import MotionRight from "./components/MotionRight";
+import MotionX from "./components/MotionX";
 
 const LandingPage = () => {
   const [tab, setTab] = useState(1);
@@ -20,22 +23,32 @@ const LandingPage = () => {
       <Header />
       <section className="hero_section">
         <div className="hero_sect_text_container">
-          <h1 className="header_text">Get food delivered to you ASAP!</h1>
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-            dignissim ornare nunc in. Est a tortor eget aenean dignissim. Cursus
-            aenean magna nulla
-          </p>
-          <div className="download_sect">
-            <img src={apple} alt="" />
-            <img src={playstore} alt="" />
-          </div>
-          <p className="download_text">
-            Download the mobile app from any store available to you.
-          </p>
+          <Motion>
+            <h1 className="header_text">Get food delivered to you ASAP!</h1>
+          </Motion>
+          <MotionX>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
+              dignissim ornare nunc in. Est a tortor eget aenean dignissim.
+              Cursus aenean magna nulla
+            </p>
+          </MotionX>
+          <MotionRight>
+            <div className="download_sect">
+              <img src={apple} alt="" />
+              <img src={playstore} alt="" />
+            </div>
+          </MotionRight>
+          <MotionX>
+            <p className="download_text">
+              Download the mobile app from any store available to you.
+            </p>
+          </MotionX>
         </div>
         <div className="hero_sect_image_container">
-          <img src={intro} alt="" />
+          <MotionRight>
+            <img src={intro} alt="" />
+          </MotionRight>
         </div>
       </section>
       <section id="about" className="landing_section_two">
@@ -46,26 +59,38 @@ const LandingPage = () => {
               key={key}
             >
               <div className="pin_text_tab">
-                <p style={{ color: "white" }} className="paragraph">
-                  {item.paragraph}
-                </p>
-                <h1 style={{ color: "white" }} className="header_text">
-                  {item.title}
-                </h1>
-                <Button
-                  color={"#178C49"}
-                  background={"white"}
-                  height={50}
-                  width={212}
-                  title={"Contact us"}
-                />
+                <MotionX>
+                  <p style={{ color: "white" }} className="paragraph">
+                    {item.paragraph}
+                  </p>
+                </MotionX>
+                <Motion>
+                  <h1 style={{ color: "white" }} className="header_text">
+                    {item.title}
+                  </h1>
+                </Motion>
+                <MotionX>
+                  <Button
+                    color={"#178C49"}
+                    background={"white"}
+                    height={50}
+                    width={212}
+                    title={"Contact us"}
+                  />
+                </MotionX>
               </div>
               <div className="pin_img_tab">
-                <div>
-                  <img src={truck} alt="" />
+                <div className="truck">
+                  <Motion>
+                    <img src={truck} alt="" />
+                  </Motion>
                 </div>
-                <h2>{item.intro}</h2>
-                <p>{item.paragraph2}</p>
+                <MotionX>
+                  <h2>{item.intro}</h2>
+                </MotionX>
+                <MotionRight>
+                  <p>{item.paragraph2}</p>
+                </MotionRight>
               </div>
             </div>
           );
