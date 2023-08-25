@@ -55,10 +55,33 @@ const Header = () => {
             }}
           >
             <img src={close} alt="" onClick={toggleVisible} />
-            <Link className="link_1">About us</Link>
-            <Link className="link_2">Process</Link>
-            <Link className="link_3">FAQs</Link>
-            <Link className="link_4">Contact us</Link>
+            <Link
+              smooth
+              onClick={toggleVisible}
+              to={"#about"}
+              className="link_1"
+            >
+              About us
+            </Link>
+            <Link
+              smooth
+              onClick={toggleVisible}
+              to={"#process"}
+              className="link_2"
+            >
+              Process
+            </Link>
+            <Link smooth onClick={toggleVisible} to={"#faq"} className="link_3">
+              FAQs
+            </Link>
+            <Link
+              smooth
+              onClick={toggleVisible}
+              to={"#contact"}
+              className="link_4"
+            >
+              Contact us
+            </Link>
           </div>
         </MotionRight>
       </ul>

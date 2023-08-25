@@ -12,7 +12,7 @@ import MotionRight from "../MotionRight";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <GetStarted />
       <section className="footer_links">
         <div className="footer_links_item_one">
