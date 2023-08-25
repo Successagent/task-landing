@@ -15,6 +15,20 @@ const LandingPage = () => {
   const [tab, setTab] = useState(1);
   const [faqTab, setFaqTab] = useState(1);
 
+  const toggleFaqTabs = (e) => {
+    if (e.target.id === "1") {
+      setFaqTab(1);
+    } else if (e.target.id === "2") {
+      setFaqTab(2);
+    } else if (e.target.id === "3") {
+      setFaqTab(3);
+    } else if (e.target.id === "4") {
+      setFaqTab(4);
+    } else if (e.target.id === "5") {
+      setFaqTab(5);
+    }
+  };
+
   return (
     <section className="landing_page">
       <Header />
@@ -214,7 +228,6 @@ const LandingPage = () => {
             <h2>How it works</h2>
           </Motion>
         </div>
-
         <div
           style={{ display: "flex", flexDirection: "row", padding: 20, gap: 0 }}
         >
@@ -368,6 +381,8 @@ const LandingPage = () => {
                   background={faqTab === 1 ? "#3BD07B" : "white"}
                   title={"Faq question one for the needed questions"}
                   color={faqTab === 1 ? "white" : "#3BD07B"}
+                  action={toggleFaqTabs}
+                  id={1}
                 />
               </Motion>
               <MotionRight>
@@ -377,6 +392,8 @@ const LandingPage = () => {
                   background={faqTab === 2 ? "#3BD07B" : "white"}
                   title={"Faq question one for the needed questions"}
                   color={faqTab === 2 ? "white" : "#3BD07B"}
+                  action={toggleFaqTabs}
+                  id={2}
                 />
               </MotionRight>
               <MotionX>
@@ -386,6 +403,8 @@ const LandingPage = () => {
                   background={faqTab === 3 ? "#3BD07B" : "white"}
                   title={"Faq question one for the needed questions"}
                   color={faqTab === 3 ? "white" : "#3BD07B"}
+                  action={toggleFaqTabs}
+                  id={3}
                 />
               </MotionX>
               <MotionRight>
@@ -395,6 +414,8 @@ const LandingPage = () => {
                   background={faqTab === 4 ? "#3BD07B" : "white"}
                   title={"Faq question one for the needed questions"}
                   color={faqTab === 4 ? "white" : "#3BD07B"}
+                  action={toggleFaqTabs}
+                  id={4}
                 />
               </MotionRight>
               <Motion>
@@ -404,6 +425,8 @@ const LandingPage = () => {
                   background={faqTab === 5 ? "#3BD07B" : "white"}
                   title={"Faq question one for the needed questions"}
                   color={faqTab === 5 ? "white" : "#3BD07B"}
+                  action={toggleFaqTabs}
+                  id={5}
                 />
               </Motion>
             </div>
@@ -420,15 +443,64 @@ const LandingPage = () => {
               <Motion>
                 <img src={faq} alt="" />
               </Motion>
-              <MotionRight>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Posuere morbi feugiat
-                  nec sed rhoncus. Blandit massa quis volutpat amet feugiat
-                  lectus ullamcorper ultrices tincidunt. Velit sit morbi ut eu
-                  elementum porttitor fames nunc etiam. Sit varius nisl et non
-                  velit nulla morbi. Nibh nulla justo quisque tristique egestas.
-                </p>
-              </MotionRight>
+              {faqTab === 1 ? (
+                <MotionRight>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Posuere morbi
+                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
+                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
+                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
+                    nisl et non velit nulla morbi. Nibh nulla justo quisque
+                    tristique egestas.
+                  </p>
+                </MotionRight>
+              ) : faqTab === 2 ? (
+                <MotionX>
+                  <p>
+                    2 Lorem ipsum dolor sit amet consectetur. Posuere morbi
+                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
+                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
+                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
+                    nisl et non velit nulla morbi. Nibh nulla justo quisque
+                    tristique egestas.
+                  </p>
+                </MotionX>
+              ) : faqTab === 3 ? (
+                <Motion>
+                  <p>
+                    3 Lorem ipsum dolor sit amet consectetur. Posuere morbi
+                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
+                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
+                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
+                    nisl et non velit nulla morbi. Nibh nulla justo quisque
+                    tristique egestas.
+                  </p>
+                </Motion>
+              ) : faqTab === 4 ? (
+                <MotionRight>
+                  <p>
+                    4 Lorem ipsum dolor sit amet consectetur. Posuere morbi
+                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
+                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
+                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
+                    nisl et non velit nulla morbi. Nibh nulla justo quisque
+                    tristique egestas.
+                  </p>
+                </MotionRight>
+              ) : faqTab === 5 ? (
+                <MotionX>
+                  <p>
+                    5Lorem ipsum dolor sit amet consectetur. Posuere morbi
+                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
+                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
+                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
+                    nisl et non velit nulla morbi. Nibh nulla justo quisque
+                    tristique egestas.
+                  </p>
+                </MotionX>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

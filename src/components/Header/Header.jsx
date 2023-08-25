@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import HeaderLogo from "../../asset/bell_bread.png";
 import { HashLink as Link } from "react-router-hash-link";
@@ -7,8 +7,15 @@ import hamburger from "../../asset/hamburger.svg";
 import Motion from "../Motion";
 import MotionX from "../MotionX";
 import MotionRight from "../MotionRight";
+import close from "../../asset/close.png";
 
 const Header = () => {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    setVisible(!visible);
+  };
+
   return (
     <header>
       <div className="header_logo">
@@ -37,7 +44,30 @@ const Header = () => {
           title={"Contact us"}
         />
       </MotionRight>
-      <img className="hamburger" src={hamburger} alt="" />
+      <ul className={`mobile_list ${visible ? "open_menu" : ""}`}>
+        <MotionRight>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              gap: 25,
+            }}
+          >
+            <img src={close} alt="" onClick={toggleVisible} />
+            <Link className="link_1">About us</Link>
+            <Link className="link_2">Process</Link>
+            <Link className="link_3">FAQs</Link>
+            <Link className="link_4">Contact us</Link>
+          </div>
+        </MotionRight>
+      </ul>
+      <img
+        className="hamburger"
+        onClick={toggleVisible}
+        src={hamburger}
+        alt=""
+      />
     </header>
   );
 };

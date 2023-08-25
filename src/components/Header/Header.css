@@ -47,12 +47,21 @@ header a {
         width: 60px;
     }
 
+    .open_menu {
+        transform: translateX(0);
+    }
+
     .nav_list {
         display: none;
     }
 
     header {
-        padding: 20px 30px;
+        padding: 20px;
+        height: 70px;
+    }
+
+    .header_logo img {
+        height: 48px;
     }
 
     header button {
