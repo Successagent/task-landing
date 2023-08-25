@@ -677,4 +677,9 @@ footer {
     margin-bottom: 20px;
   }
 
+
+  footer .download_sect img {
+    width: 50%;
+    height: 40px;
+  }
 }
