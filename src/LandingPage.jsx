@@ -35,13 +35,15 @@ const LandingPage = () => {
       <section className="hero_section">
         <div className="hero_sect_text_container">
           <Motion>
-            <h1 className="header_text">Get food delivered to you ASAP!</h1>
+            <h1 className="header_text">
+              Get Delicious Baked Treats Delivered to You
+            </h1>
           </Motion>
           <MotionX>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-              dignissim ornare nunc in. Est a tortor eget aenean dignissim.
-              Cursus aenean magna nulla
+              Explore tasty baked goodies from local bakeries, delivered fresh
+              and warm to your doorstep. Enjoy croissants, pastries, and more
+              with just a tap. Order now for a delightful baked experience!
             </p>
           </MotionX>
           <MotionRight>
@@ -133,8 +135,8 @@ const LandingPage = () => {
             </MotionRight>
             <Motion>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+                Browse our delicious selection, choose your favorite baked
+                treats, and add them to your cart.
               </p>
             </Motion>
             <MotionX>
@@ -171,8 +173,9 @@ const LandingPage = () => {
             </MotionRight>
             <MotionX>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+                Review your order, select your payment method, and confirm your
+                delivery details. It's quick and secure with delivery to your
+                location
               </p>
             </MotionX>
             <Motion>
@@ -206,8 +209,8 @@ const LandingPage = () => {
             </Motion>
             <MotionRight>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-                dignissim ornare nunc in. Est a tortor eget aenean dignissim
+                Sit back, relax, and wait for your freshly baked goodies to
+                arrive at your doorstep. Indulge in the deliciousness!
               </p>
             </MotionRight>
             <MotionX>
@@ -379,7 +382,7 @@ const LandingPage = () => {
                   width={484}
                   height={50}
                   background={faqTab === 1 ? "#3BD07B" : "white"}
-                  title={"Faq question one for the needed questions"}
+                  title={"How long will it take for my baked goods to arrive?"}
                   color={faqTab === 1 ? "white" : "#3BD07B"}
                   action={toggleFaqTabs}
                   id={1}
@@ -390,7 +393,7 @@ const LandingPage = () => {
                   width={484}
                   height={50}
                   background={faqTab === 2 ? "#3BD07B" : "white"}
-                  title={"Faq question one for the needed questions"}
+                  title={"Is there a delivery fee for my baked goods order?"}
                   color={faqTab === 2 ? "white" : "#3BD07B"}
                   action={toggleFaqTabs}
                   id={2}
@@ -401,7 +404,9 @@ const LandingPage = () => {
                   width={484}
                   height={50}
                   background={faqTab === 3 ? "#3BD07B" : "white"}
-                  title={"Faq question one for the needed questions"}
+                  title={
+                    "Can I customize my order or request special dietary options?"
+                  }
                   color={faqTab === 3 ? "white" : "#3BD07B"}
                   action={toggleFaqTabs}
                   id={3}
@@ -412,23 +417,12 @@ const LandingPage = () => {
                   width={484}
                   height={50}
                   background={faqTab === 4 ? "#3BD07B" : "white"}
-                  title={"Faq question one for the needed questions"}
+                  title={"What payment methods are accepted?"}
                   color={faqTab === 4 ? "white" : "#3BD07B"}
                   action={toggleFaqTabs}
                   id={4}
                 />
               </MotionRight>
-              <Motion>
-                <Button
-                  width={484}
-                  height={50}
-                  background={faqTab === 5 ? "#3BD07B" : "white"}
-                  title={"Faq question one for the needed questions"}
-                  color={faqTab === 5 ? "white" : "#3BD07B"}
-                  action={toggleFaqTabs}
-                  id={5}
-                />
-              </Motion>
             </div>
           </div>
           <div className="what_hr">
@@ -446,45 +440,33 @@ const LandingPage = () => {
               {faqTab === 1 ? (
                 <MotionRight>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur. Posuere morbi
-                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
-                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
-                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
-                    nisl et non velit nulla morbi. Nibh nulla justo quisque
-                    tristique egestas.
+                    Delivery times vary depending on your location and bakery.
+                    You can track your order in real-time to see the estimated
+                    delivery time.
                   </p>
                 </MotionRight>
               ) : faqTab === 2 ? (
                 <MotionX>
                   <p>
-                    2 Lorem ipsum dolor sit amet consectetur. Posuere morbi
-                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
-                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
-                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
-                    nisl et non velit nulla morbi. Nibh nulla justo quisque
-                    tristique egestas.
+                    Delivery fees may apply and are determined by the bakery and
+                    your location. You can view any applicable fees during the
+                    checkout process before confirming your order.
                   </p>
                 </MotionX>
               ) : faqTab === 3 ? (
                 <Motion>
                   <p>
-                    3 Lorem ipsum dolor sit amet consectetur. Posuere morbi
-                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
-                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
-                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
-                    nisl et non velit nulla morbi. Nibh nulla justo quisque
-                    tristique egestas.
+                    Yes, you can customize your order and leave specific
+                    instructions for the bakery. We offer options for dietary
+                    preferences like gluten-free or vegan.
                   </p>
                 </Motion>
               ) : faqTab === 4 ? (
                 <MotionRight>
                   <p>
-                    4 Lorem ipsum dolor sit amet consectetur. Posuere morbi
-                    feugiat nec sed rhoncus. Blandit massa quis volutpat amet
-                    feugiat lectus ullamcorper ultrices tincidunt. Velit sit
-                    morbi ut eu elementum porttitor fames nunc etiam. Sit varius
-                    nisl et non velit nulla morbi. Nibh nulla justo quisque
-                    tristique egestas.
+                    We accept a variety of payment methods, including
+                    credit/debit cards. Your payment information is secure with
+                    us.
                   </p>
                 </MotionRight>
               ) : faqTab === 5 ? (

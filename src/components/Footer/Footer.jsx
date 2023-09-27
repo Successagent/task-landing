@@ -3,6 +3,7 @@ import GetStarted from "../GetStarted";
 import HeaderLogo from "../../asset/footerlogo.png";
 import { GoLocation } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 import facebook from "../../asset/facebook.svg";
 import instagram from "../../asset/instagram.svg";
 import twitter from "../../asset/twitter.svg";
@@ -20,10 +21,7 @@ const Footer = () => {
             <img src={HeaderLogo} alt="" />
           </Motion>
           <MotionX>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Ultricies volutpat ut
-              dignissim ornare nunc in.
-            </p>
+            <p>From Oven to You, Taste the Difference!</p>
           </MotionX>
         </div>
         <div className="footer_links_item_two">
@@ -48,15 +46,22 @@ const Footer = () => {
             <div className="flex">
               <GoLocation size={18} color="white" style={{ width: "20%" }} />
               <p>
-                No 5 Lorem ipsum dolor sit amet consectetur. Ultricies volutpat
-                ut dignissim ornare nunc in.
+                <a href="#">Yenagoa Bayelsa</a>
               </p>
             </div>
           </MotionX>
           <MotionRight>
             <div className="flex">
               <BsTelephone size={18} color="white" style={{ width: "10%" }} />
-              <p>01223345676</p>
+              <p>08182736828</p>
+            </div>
+          </MotionRight>
+          <MotionRight>
+            <div className="flex">
+              <AiOutlineMail size={18} color="white" style={{ width: "10%" }} />
+              <p>
+                <a href="mailto:info@bellsbreads.com">Info@bellsbreads.com</a>
+              </p>
             </div>
           </MotionRight>
         </div>

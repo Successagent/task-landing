@@ -13,9 +13,7 @@ const GetStarted = () => {
           <h2 style={{ color: "black" }}>Get started!</h2>
         </MotionX>
         <Motion>
-          <p>
-            Fresh food everyday on Adiza. You will love our sizzling hot menu
-          </p>
+          <p>Fresh bakes everyday. You will love our menu</p>
         </Motion>
       </div>
       <MotionRight>

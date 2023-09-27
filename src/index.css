@@ -155,11 +155,13 @@ h2 {
 .pin_img_tab p,
 .what_we_do p,
 .footer_links p,
-.footer_contact p {
+.footer_contact p,
+.footer_links a {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   color: white;
+  width: 200px;
 }
 
 .what_we_do {
@@ -682,4 +684,6 @@ footer {
     width: 50%;
     height: 40px;
   }
+
+
 }
