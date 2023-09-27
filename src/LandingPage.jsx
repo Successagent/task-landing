@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Button, Header, MotionRight, Motion, MotionX } from "./components";
-import intro from "./asset/intro.png";
+import intro from "./asset/intro.webp";
 import apple from "./asset/appstore.png";
 import playstore from "./asset/playstore.png";
 import { itemOne, itemThree, itemTwo, pinTabs } from "./utils/data";
 import truck from "./asset/truck.png";
-import what1 from "./asset/what1.png";
-import what2 from "./asset/what2.png";
-import what3 from "./asset/what3.png";
+import what1 from "./asset/what1.webp";
+import what2 from "./asset/what2.webp";
+import what3 from "./asset/what3.webp";
 import faq from "./asset/faq.png";
 import Footer from "./components/Footer/Footer";
 

@@ -161,6 +161,11 @@ h2 {
   font-weight: 400;
   line-height: 32px;
   color: white;
+}
+
+.footer_links p,
+.footer_contact p,
+.footer_links a {
   width: 200px;
 }
 
@@ -183,6 +188,7 @@ h2 {
 .what_we_do p,
 .what_we_do h2 {
   color: black;
+  width: 100%;
 }
 
 .indicator {
@@ -513,7 +519,9 @@ footer {
   .pin_img_tab {
     width: 100%;
     margin-bottom: 50px;
+    padding: 40px 25px;
   }
+
 
   .active {
     flex-direction: column;
