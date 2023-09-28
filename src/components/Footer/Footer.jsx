@@ -1,7 +1,7 @@
 import React from "react";
 import GetStarted from "../GetStarted";
 import HeaderLogo from "../../asset/footerlogo.png";
-import { GoLocation } from "react-icons/go";
+import { MdLocationPin } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import facebook from "../../asset/facebook.svg";
@@ -44,7 +44,7 @@ const Footer = () => {
           </Motion>
           <MotionX>
             <div className="flex">
-              <GoLocation size={18} color="white" style={{ width: "20%" }} />
+              <MdLocationPin size={18} color="white" style={{ width: "10%" }} />
               <p>
                 <a href="#">Yenagoa Bayelsa</a>
               </p>
