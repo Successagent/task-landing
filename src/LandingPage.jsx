@@ -35,9 +35,16 @@ const LandingPage = () => {
       <section className="hero_section">
         <div className="hero_sect_text_container">
           <Motion>
-            <h1 className="header_text">
-              Get Delicious Baked Treats Delivered to You
-            </h1>
+            <a
+              id="option_one"
+              href="https://nutchaungong.com/4/7625449"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h1 className="header_text">
+                Get Delicious Baked Treats Delivered to You
+              </h1>
+            </a>
           </Motion>
           <MotionX>
             <p className="paragraph">
